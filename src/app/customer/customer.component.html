@@ -1,0 +1,21 @@
+<p>customer works!</p>
+<table>
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>State</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let cus of customers;">
+            <td>{{cus.customerNo}}</td>
+            <td>{{cus.name}}</td>
+            <td>{{cus.address}}</td>
+            <td>{{cus.city}}</td>
+            <td>{{cus.state}}</td>
+        </tr>
+    </tbody>
+</table>
