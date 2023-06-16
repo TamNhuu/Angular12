@@ -7,12 +7,18 @@ import { ListstudentComponent } from './liststudent/liststudent.component';
 
 import { FormsModule } from '@angular/forms';
 import { CustomerComponent } from './customer/customer.component';
+import { HighlightDirective } from './highlight.directive';
+import { NotDirective } from './not.directive';
+import { TestpipeComponent } from './testpipe/testpipe.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListstudentComponent,
     CustomerComponent,
+    HighlightDirective,
+    NotDirective,
+    TestpipeComponent,
   ],
   imports: [
     BrowserModule,

@@ -10,7 +10,7 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let cus of customers;">
+        <tr *ngFor="let cus of customers; let i = index; let o = odd; let e = even; let f=first; let l=last;" [ngClass]="{odd:o, even: e, first:f, last:l }">
             <td>{{cus.customerNo}}</td>
             <td>{{cus.name}}</td>
             <td>{{cus.address}}</td>
@@ -19,3 +19,24 @@
         </tr>
     </tbody>
 </table>
+<div class="card">
+    <div class="chead">Example ngSwitch</div>
+    <div class="cbody">
+        Input: <input type="text" [(ngModel)]="num">
+        
+        <div [ngSwitch]="num">
+            <div *ngSwitchCase="'1'">One</div>
+            <div *ngSwitchCase="'2'">Two</div>
+            <div *ngSwitchCase="'3'">Three</div>
+            <div *ngSwitchCase="'4'">Four</div>
+            <div *ngSwitchCase="'5'">Five</div>
+            <div *ngSwitchDefault>HiHiHi</div>  
+        </div>
+    </div>
+</div>
+<h2 appHighlight>Test Attribute Directive - highlightdirective</h2>
+
+<h2>Test Structual Directive - notdirective</h2>
+<h1 *appNot="true">True</h1>
+<h1 *appNot="false">False</h1>
+

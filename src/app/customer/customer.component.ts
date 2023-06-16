@@ -16,6 +16,7 @@ export class CustomerComponent {
     {customerNo: 5, name: 'Virat Kohli', address: '', city: 'Delhi', state: 'Delhi', country: 'India'},
  
   ]
+  public num: number = 0;
 }
 
 
