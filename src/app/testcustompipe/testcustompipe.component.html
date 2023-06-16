@@ -1,0 +1,9 @@
+<p>testcustompipe works!</p>
+<p>
+    F: <input type="text" [(ngModel)]="fvalue">
+</p>
+<p>C: {{fvalue | tempconverter:'C'}}</p>
+<p>
+    C: <input type="text" [(ngModel)]="cvalue">
+</p>
+<p>F: {{cvalue | tempconverter: 'F'}}</p>

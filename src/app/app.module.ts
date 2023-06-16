@@ -7,12 +7,20 @@ import { ListstudentComponent } from './liststudent/liststudent.component';
 
 import { FormsModule } from '@angular/forms';
 import { CustomerComponent } from './customer/customer.component';
+import { TestcustompipeComponent } from './testcustompipe/testcustompipe.component';
+import { TempconverterPipe } from './tempconverter.pipe';
+import { PassingdataPCComponent } from './passingdata-pc/passingdata-pc.component';
+import { PassingdataCpComponent } from './passingdata-cp/passingdata-cp.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListstudentComponent,
     CustomerComponent,
+    TestcustompipeComponent,
+    TempconverterPipe,
+    PassingdataPCComponent,
+    PassingdataCpComponent,
   ],
   imports: [
     BrowserModule,
