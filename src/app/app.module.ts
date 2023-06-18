@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListstudentComponent } from './liststudent/liststudent.component';
 
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CustomerComponent } from './customer/customer.component';
 import { HighlightDirective } from './highlight.directive';
 import { NotDirective } from './not.directive';
 import { TestpipeComponent } from './testpipe/testpipe.component';
+import { ChildComponent } from './child/child.component';
+import { TemplateformComponent } from './templateform/templateform.component';
 
 @NgModule({
   declarations: [
@@ -19,11 +21,14 @@ import { TestpipeComponent } from './testpipe/testpipe.component';
     HighlightDirective,
     NotDirective,
     TestpipeComponent,
+    ChildComponent,
+    TemplateformComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
